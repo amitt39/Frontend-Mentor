@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__content">
+        <a class="header__homelink" href="#main">
+          <img
+            class="header__logo"
+            src="/Weather App/assets/images/logo.svg"
+            width="197"
+            height="40"
+            alt="Weather App Home Page"
+          />
+        </a>
+        <select class="header__dropdown" name="units" id="units">
+          <option value="">Units</option>
+        </select>
+      </div>
+    </header>
+
+    <main id="main" class="main wrapper">
+      <section class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">How's the sky looking today?</h1>
+          <div class="hero__search">
+            <input
+              class="hero__textbox"
+              type="text"
+              name="Search"
+              id="search"
+              placeholder="Search for place"
+            />
+            <button class="hero__button" type="submit">Search</button>
+          </div>
+        </div>
+      </section>
+      <div class="dashboard">
+        <section class="current">
+          <div class="current__content">
+            <div class="current__weather">
+              <div class="current__location">
+                <p class="current__city">Berlin, Germany</p>
+                <p class="current__date">Tuesday, Aug 5, 2025</p>
+              </div>
+              <div class="current__info">
+                <img
+                  class="current__icon"
+                  src="/Weather App/assets/images/icon-sunny.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="current__temp"><span>68</span>&deg;</p>
+              </div>
+            </div>
+            <div class="current__conditions">
+              <div class="block current__condition">
+                <p class="current__condition-title">Feels Like</p>
+                <p class="current__condition-value">64&deg;</p>
+              </div>
+              <div class="block current__condition">
+                <p class="current__condition-title">Humidity</p>
+                <p id="humidity" class="current__condition-value">46%</p>
+              </div>
+              <div class="block current__condition">
+                <p class="current__condition-title">Wind</p>
+                <p id="wind" class="current__condition-value">9 mph</p>
+              </div>
+              <div class="block current__condition">
+                <p class="current__condition-title">Precipitation</p>
+                <p id="precipitation" class="current__condition-value">0 in</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="daily">
+          <h2 class="daily__title">Daily Forecast</h2>
+          <div class="daily__forecast">
+            <div class="block daily__day">
+              <p class="daily__day-title">Tue</p>
+              <img
+                class="daily__day-icon"
+                src="/Weather App/assets/images/icon-rain.webp"
+                width="320px"
+                height="320px"
+                alt=""
+              />
+              <div class="daily__day-temps">
+                <div class="daily__day-high">20&deg;</div>
+                <div class="daily__day-low">14&deg;</div>
+              </div>
+            </div>
+            <div class="block daily__day">
+              <p class="daily__day-title">Tue</p>
+              <img
+                class="daily__day-icon"
+                src="/Weather App/assets/images/icon-drizzle.webp"
+                width="320px"
+                height="320px"
+                alt=""
+              />
+              <div class="daily__day-temps">
+                <div class="daily__day-high">20&deg;</div>
+                <div class="daily__day-low">14&deg;</div>
+              </div>
+            </div>
+            <div class="block daily__day">
+              <p class="daily__day-title">Tue</p>
+              <img
+                class="daily__day-icon"
+                src="/Weather App/assets/images/icon-sunny.webp"
+                width="320px"
+                height="320px"
+                alt=""
+              />
+              <div class="daily__day-temps">
+                <div class="daily__day-high">20&deg;</div>
+                <div class="daily__day-low">14&deg;</div>
+              </div>
+            </div>
+            <div class="block daily__day">
+              <p class="daily__day-title">Tue</p>
+              <img
+                class="daily__day-icon"
+                src="/Weather App/assets/images/icon-partly-cloudy.webp"
+                width="320px"
+                height="320px"
+                alt=""
+              />
+              <div class="daily__day-temps">
+                <div class="daily__day-high">20&deg;</div>
+                <div class="daily__day-low">14&deg;</div>
+              </div>
+            </div>
+            <div class="block daily__day">
+              <p class="daily__day-title">Tue</p>
+              <img
+                class="daily__day-icon"
+                src="/Weather App/assets/images/icon-storm.webp"
+                width="320px"
+                height="320px"
+                alt=""
+              />
+              <div class="daily__day-temps">
+                <div class="daily__day-high">20&deg;</div>
+                <div class="daily__day-low">14&deg;</div>
+              </div>
+            </div>
+            <div class="block daily__day">
+              <p class="daily__day-title">Tue</p>
+              <img
+                class="daily__day-icon"
+                src="/Weather App/assets/images/icon-snow.webp"
+                width="320px"
+                height="320px"
+                alt=""
+              />
+              <div class="daily__day-temps">
+                <div class="daily__day-high">20&deg;</div>
+                <div class="daily__day-low">14&deg;</div>
+              </div>
+            </div>
+            <div class="block daily__day">
+              <p class="daily__day-title">Tue</p>
+              <img
+                class="daily__day-icon"
+                src="/Weather App/assets/images/icon-fog.webp"
+                width="320px"
+                height="320px"
+                alt=""
+              />
+              <div class="daily__day-temps">
+                <div class="daily__day-high">20&deg;</div>
+                <div class="daily__day-low">14&deg;</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="hourly">
+          <div class="hourly__content">
+            <div class="hourly__header">
+              <h2 class="hourly__header-title">Hourly Forecastt</h2>
+              <select name="hourly__select" id="hourlyDay">
+                <option class="hourly__select-day" value="">Tuesday</option>
+              </select>
+            </div>
+            <div class="hourly__hours">
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-overcast.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-partly-cloudy.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-sunny.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-overcast.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-snow.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-fog.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-snow.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+              <div class="hourly__hour">
+                <img
+                  class="hourly__hour-icon"
+                  src="/Weather App/assets/images/icon-overcast.webp"
+                  width="320px"
+                  height="320px"
+                  alt=""
+                />
+                <p class="hourly__hour-time">3 PM</p>
+                <p class="hourly__hour-temp">68&deg;</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
